@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T01:35:00.000Z",
+  "title": "Design System: ABI - Arbeit.Bildung.International",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Alpine Spruce Teal",
+        "canonical": "#0d9488",
+        "tonalRamp": ["#042f2e", "#115e59", "#0f766e", "#0d9488", "#14b8a6", "#2dd4bf", "#99f6e4", "#ccfbf1"]
+      },
+      "secondary": {
+        "role": "secondary",
+        "displayName": "Deep Horizon Sky",
+        "canonical": "#0284c7",
+        "tonalRamp": ["#082f49", "#075985", "#0369a1", "#0284c7", "#38bdf8", "#7dd3fc", "#bae6fd", "#e0f2fe"]
+      },
+      "accent": {
+        "role": "tertiary",
+        "displayName": "Warm Amber Spark",
+        "canonical": "#f59e0b",
+        "tonalRamp": ["#451a03", "#78350f", "#b45309", "#d97706", "#f59e0b", "#fbbf24", "#fde68a", "#fef3c7"]
+      },
+      "neutral-bg": {
+        "role": "neutral",
+        "displayName": "Crisp Slate Paper",
+        "canonical": "#f8fafc",
+        "tonalRamp": ["#020617", "#0f172a", "#1e293b", "#334155", "#64748b", "#cbd5e1", "#e2e8f0", "#f8fafc"]
+      },
+      "neutral-fg": {
+        "role": "neutral",
+        "displayName": "Abyssal Ink",
+        "canonical": "#0f172a",
+        "tonalRamp": ["#020617", "#0f172a", "#1e293b", "#334155", "#64748b", "#cbd5e1", "#e2e8f0", "#f8fafc"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headlines only (Arbeit. Bildung. International)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Major section headings (Unsere Leistungen, Über uns)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service card titles and module headers."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Standard narrative and descriptive paragraphs."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Category eyebrow kickers, stats labels, and pill badges."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-lift",
+        "value": "0 20px 25px -5px rgba(13, 148, 136, 0.1), 0 8px 10px -6px rgba(13, 148, 136, 0.1)",
+        "purpose": "Hover lift for interactive cards and service modules."
+      },
+      {
+        "name": "btn-glow",
+        "value": "0 10px 15px -3px rgba(13, 148, 136, 0.25), 0 4px 6px -4px rgba(13, 148, 136, 0.25)",
+        "purpose": "Buoyant glow under primary gradient action buttons."
+      },
+      {
+        "name": "glass-nav",
+        "value": "0 1px 3px 0 rgba(0, 0, 0, 0.05)",
+        "purpose": "Subtle hairline drop under sticky glassmorphic navigation header."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Default smooth easing for hover translations and scale."
+      },
+      {
+        "name": "duration-fast",
+        "value": "150ms",
+        "purpose": "Button click and color transition speed."
+      },
+      {
+        "name": "duration-normal",
+        "value": "300ms",
+        "purpose": "Card lift, shadow elevation, and drawer reveal speed."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Header CTA Pill Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Navigation bar contact trigger with dual-gradient fill and subtle hover scale.",
+      "html": "<a href=\"mailto:Info@abi-ug.de\" class=\"ds-btn-pill\"><svg class=\"ds-icon\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z\"/></svg>Kontakt mit uns</a>",
+      "css": ".ds-btn-pill { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 20px; border-radius: 9999px; font-size: 14px; font-weight: 600; color: #ffffff; text-decoration: none; background: linear-gradient(135deg, #0d9488 0%, #0284c7 100%); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; } .ds-btn-pill:hover { transform: scale(1.02); box-shadow: 0 10px 15px -3px rgba(13, 148, 136, 0.25); } .ds-btn-pill:active { transform: scale(0.98); } .ds-icon { width: 16px; height: 16px; }"
+    },
+    {
+      "name": "Hero Primary Action Button",
+      "kind": "button",
+      "refersTo": "button-hero",
+      "description": "Prominent squircle hero button with buoyant glow and directional lift.",
+      "html": "<a href=\"mailto:Info@abi-ug.de\" class=\"ds-btn-hero\"><svg class=\"ds-icon-md\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z\"/></svg>Kontakt mit uns</a>",
+      "css": ".ds-btn-hero { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 32px; border-radius: 16px; font-size: 16px; font-weight: 700; color: #ffffff; text-decoration: none; background: linear-gradient(135deg, #0d9488 0%, #0284c7 100%); box-shadow: 0 10px 15px -3px rgba(13, 148, 136, 0.25); transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; } .ds-btn-hero:hover { transform: translateY(-2px); box-shadow: 0 20px 25px -5px rgba(13, 148, 136, 0.35); } .ds-btn-hero:active { transform: translateY(0); } .ds-icon-md { width: 20px; height: 20px; }"
+    },
+    {
+      "name": "Category Eyebrow Pill",
+      "kind": "chip",
+      "refersTo": "badge-category",
+      "description": "Uppercase section identifier badge with translucent spruce teal background.",
+      "html": "<span class=\"ds-badge-category\">Was Wir Bieten</span>",
+      "css": ".ds-badge-category { display: inline-flex; align-items: center; padding: 4px 12px; border-radius: 9999px; background: rgba(13, 148, 136, 0.1); border: 1px solid rgba(13, 148, 136, 0.2); color: #0f766e; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }"
+    },
+    {
+      "name": "Service Pathway Card",
+      "kind": "card",
+      "refersTo": "card-service",
+      "description": "Architectural service card featuring icon badge, sequential index, and interactive hover lift.",
+      "html": "<div class=\"ds-card-service\"><div class=\"ds-icon-box\"><svg class=\"ds-icon-lg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z\"/></svg></div><span class=\"ds-card-step\">Leistung 02</span><h3 class=\"ds-card-title\">Anerkennung von Abschlüssen</h3><p class=\"ds-card-desc\">Wir übernehmen die gesamte Kommunikation mit den zuständigen Behörden zur Gleichstellung Ihrer Qualifikationen.</p><div class=\"ds-card-footer\"><span class=\"ds-card-link\">Anfragen & Details &rarr;</span></div></div>",
+      "css": ".ds-card-service { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 24px; padding: 32px; display: flex; flex-col; gap: 12px; transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1); } .ds-card-service:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(13, 148, 136, 0.1), 0 8px 10px -6px rgba(13, 148, 136, 0.1); border-color: rgba(13, 148, 136, 0.4); } .ds-icon-box { width: 56px; height: 56px; border-radius: 16px; background: rgba(13, 148, 136, 0.1); display: flex; align-items: center; justify-content: center; color: #0d9488; margin-bottom: 8px; } .ds-icon-lg { width: 32px; height: 32px; } .ds-card-step { font-size: 11px; font-weight: 700; color: #0d9488; text-transform: uppercase; letter-spacing: 0.1em; } .ds-card-title { font-size: 22px; font-weight: 700; color: #0f172a; margin: 4px 0 8px; line-height: 1.3; } .ds-card-desc { font-size: 15px; color: #475569; line-height: 1.6; margin: 0; } .ds-card-footer { margin-top: 20px; padding-top: 16px; border-top: 1px solid #f1f5f9; } .ds-card-link { font-size: 14px; font-weight: 600; color: #0d9488; }"
+    },
+    {
+      "name": "Glassmorphic Header Bar",
+      "kind": "nav",
+      "refersTo": "header-nav",
+      "description": "Sticky top navigation shell with frosted blur and subtle dividing stroke.",
+      "html": "<header class=\"ds-glass-header\"><div class=\"ds-nav-container\"><span class=\"ds-brand\">Arbeit.Bildung.International</span><nav class=\"ds-nav-links\"><a href=\"#\" class=\"ds-nav-item active\">Startseite</a><a href=\"#\" class=\"ds-nav-item\">Über uns</a><a href=\"#\" class=\"ds-nav-item\">Unsere Leistungen</a></nav></div></header>",
+      "css": ".ds-glass-header { position: sticky; top: 0; z-index: 50; height: 72px; background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226, 232, 240, 0.8); display: flex; align-items: center; } .ds-nav-container { max-width: 1280px; width: 100%; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; } .ds-brand { font-size: 18px; font-weight: 800; color: #0f172a; } .ds-nav-links { display: flex; gap: 24px; } .ds-nav-item { font-size: 14px; font-weight: 500; color: #475569; text-decoration: none; transition: color 0.15s ease; } .ds-nav-item:hover, .ds-nav-item.active { color: #0d9488; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Sovereign Harbor",
+    "overview": "ABI's visual language embodies the quiet reassurance, institutional clarity, and unwavering precision of a safe, authoritative port of entry. Moving to Germany as a physician, nurse, engineer, or academic scholar is a monumental, high-stakes life decision surrounded by legal and bureaucratic uncertainty. The design system therefore rejects flashiness, corporate gimmicks, and tech hyperactivity in favor of structured architectural grounding, balanced white space, and luminous maritime accents.\n\nThe interface unites two worlds: the civic solidity of the German public and institutional landscape, and the warm, accessible clarity required by international professionals reviewing pathways in a non-native language. High-contrast slate typography is illuminated by alpine spruce teal and deep horizon sky blue, signalling forward movement, legal security, and accredited prestige.",
+    "keyCharacteristics": [
+      "Institutional Reliability: Clean, spacious structural grid with balanced hierarchy that instills immediate confidence in medical directors and foreign applicants alike.",
+      "Luminous Layering: Light slate and dark void backdrops softened by gentle glassmorphic navigation bars and ambient teal-sky background glows.",
+      "Directional Continuity: Clear progressive steps, pill badges, and dual-gradient call-to-actions that anchor the eye without visual noise."
+    ],
+    "rules": [
+      {
+        "name": "The Gradient Anchor Rule",
+        "body": "Linear gradients (linear-gradient(135deg, #0d9488 0%, #0284c7 100%)) are strictly reserved for primary CTA trigger fills, key header title accents (gradient-text), and signature banners. Background body canvases must never be flooded with full gradients.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ten Percent Accent Rule",
+        "body": "Secondary sky accents and amber sparks must occupy ≤10% of any viewport. Their rarity is what confers immediate scanning clarity.",
+        "section": "colors"
+      },
+      {
+        "name": "The Scannable Credibility Rule",
+        "body": "Non-native German speakers evaluating career pathways require generous line-heights (1.625) and constrained paragraph line lengths (≤65ch) to maintain effortless comprehension and eliminate bureaucratic intimidation.",
+        "section": "typography"
+      },
+      {
+        "name": "The Kinetic Lift Rule",
+        "body": "Cards and buttons are flush or cleanly hair-lined at rest. Elevated lift and luminous shadows emerge purely in response to user intent (hover, focus-visible).",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the dual-audience balance: make navigation and service overviews equally scannable for an international medical graduate and a German hospital administrator.",
+      "Do pair every critical interactive card with clear, tactile feedback (1px border brightening, -4px translation, soft tinted teal shadow).",
+      "Do maintain a strict 65ch maximum line length on body copy to ensure high reading comprehension for non-native German speakers.",
+      "Do use authentic iconography and real document/institutional cues rather than decorative visual filler."
+    ],
+    "donts": [
+      "Don't use generic, cheesy staffing stock imagery (e.g. forced thumbs-up photos, cliché handshakes, artificial smiles).",
+      "Don't flood body canvas areas with full background gradients or harsh multi-stop rainbow ramps.",
+      "Don't apply heavy, murky, uncolored black drop shadows (box-shadow: 0 10px 30px #000000).",
+      "Don't sacrifice German institutional seriousness for trendy, hyper-playful startup gimmicks."
+    ]
+  }
+}

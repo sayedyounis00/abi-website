@@ -1,26 +1,185 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #f8fafc;
+    --foreground: #0f172a;
+    --primary: #0f766e;
+    --primary-light: #0d9488;
+    --primary-hover: #115e59;
+    --secondary: #0284c7;
+    --secondary-hover: #0369a1;
+    --accent: #0284c7;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+    --muted-foreground: #475569;
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    color-scheme: light;
+  }
+
+  * {
+    border-color: var(--border-color);
+  }
+
+  ::selection {
+    background-color: #0f766e;
+    color: #ffffff;
+  }
+
+  /* Browser surface theming */
+  :focus-visible {
+    outline: 2px solid #0f766e;
+    outline-offset: 2px;
+  }
+
+  a {
+    text-underline-offset: 4px;
+  }
+
+  input, textarea, select {
+    caret-color: #0f766e;
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  color-scheme: light;
+}
+
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+  -webkit-tap-highlight-color: transparent;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Hide scrollbar on mobile for cleaner feel */
+@media (max-width: 767px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+  html {
+    scrollbar-width: none;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+  border: 2px solid #f1f5f9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0d9488;
+}
+
+/* Glassmorphic header */
+.glass-header {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Gradient utility for primary buttons & focal highlights */
+.gradient-bg {
+  background: linear-gradient(135deg, #0d9488 0%, #0284c7 100%);
+}
+
+.gradient-bg-subtle {
+  background: linear-gradient(135deg, rgba(13, 148, 136, 0.06) 0%, rgba(2, 132, 199, 0.06) 100%);
+}
+
+/* Subtle card lift with exponential ease - hover-capable pointers only */
+.card-lift {
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@media (hover: hover) {
+  .card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(13, 148, 136, 0.1), 0 8px 10px -6px rgba(13, 148, 136, 0.08);
+  }
+}
+
+/* Button tactile press feedback */
+.btn-press {
+  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.18s ease;
+}
+.btn-press:active {
+  transform: scale(0.97);
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Motion Accessibility: prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .card-lift:hover, .btn-press:active {
+    transform: none !important;
+  }
+}
+
+/* Print adaptation */
+@media print {
+  header, footer nav, .glass-header, form, button, a[href="#beratung"] {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+  .card-lift {
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+    break-inside: avoid;
+  }
 }
