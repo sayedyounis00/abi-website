@@ -7,6 +7,7 @@ export async function POST(request: Request) {
     const {
       profession,
       germanLevel,
+      goal,
       name,
       email,
       phone = "",
@@ -50,12 +51,20 @@ export async function POST(request: Request) {
       );
     }
 
+    if (!goal || typeof goal !== "string") {
+      return NextResponse.json(
+        { success: false, error: "Bitte wählen Sie Ihr Ziel der Kontaktaufnahme aus." },
+        { status: 400 }
+      );
+    }
+
     // Call mailer
     await sendIntakeEmail({
       name: name.trim(),
       email: email.trim().toLowerCase(),
       profession: profession.trim(),
       germanLevel: germanLevel.trim(),
+      goal: goal.trim(),
       phone: typeof phone === "string" ? phone.trim() : "",
       notes: typeof notes === "string" ? notes.trim() : "",
     });

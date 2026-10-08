@@ -3,6 +3,7 @@ import nodemailer from "nodemailer";
 export interface IntakeSubmissionData {
   profession: string;
   germanLevel: string;
+  goal: string;
   name: string;
   email: string;
   phone?: string;
@@ -103,6 +104,10 @@ export async function sendIntakeEmail(data: IntakeSubmissionData) {
           <td><strong>${escapeHtml(data.profession)}</strong></td>
         </tr>
         <tr>
+          <th>Ziel der Kontaktaufnahme:</th>
+          <td><strong>${escapeHtml(data.goal)}</strong></td>
+        </tr>
+        <tr>
           <th>Aktuelles Deutschniveau:</th>
           <td>${escapeHtml(data.germanLevel)}</td>
         </tr>
@@ -131,6 +136,7 @@ Name: ${data.name}
 E-Mail: ${data.email}
 Telefon/WhatsApp: ${data.phone || "Nicht angegeben"}
 Fachbereich: ${data.profession}
+Ziel: ${data.goal}
 Deutschniveau: ${data.germanLevel}
 
 Situation / Nachricht:

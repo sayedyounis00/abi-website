@@ -45,7 +45,7 @@ export default function ImpressumPage() {
             </h2>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-[11px] leading-relaxed space-y-1">
               <p className="font-bold text-slate-900 text-sm mb-2">
-                ABI – Arbeit.Bildung.International
+                Abi UG (haftungsbeschränkt)
               </p>
               <p className="text-slate-600 font-medium">Study Abroad &amp; Career Services</p>
               <p>Schlossstraße 5</p>
@@ -132,7 +132,7 @@ export default function ImpressumPage() {
               </p>
               <p>
                 <strong>Umsatzsteuer-Identifikationsnummer gemäß § 27 a UStG:</strong>{" "}
-                <span className="text-slate-600">In Beantragung</span>
+                <span className="text-slate-600">DE459361391</span>
               </p>
             </div>
           </section>
@@ -150,20 +150,6 @@ export default function ImpressumPage() {
             </div>
           </section>
 
-          {/* Berufshaftpflichtversicherung */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-slate-900">
-              Berufshaftpflichtversicherung
-            </h2>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-[11px] leading-relaxed space-y-1.5">
-              <p>
-                Die ABI – Arbeit.Bildung.International unterhält eine den gesetzlichen Vorschriften entsprechende Berufshaftpflichtversicherung.
-              </p>
-              <p>
-                <strong>Räumlicher Geltungsbereich:</strong> Deutschland / Europäische Union (EU)
-              </p>
-            </div>
-          </section>
 
           {/* Streitbeilegungsverfahren */}
           <section className="space-y-4">

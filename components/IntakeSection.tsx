@@ -10,6 +10,7 @@ export default function IntakeSection() {
   // Applicant form state
   const [applicantProfession, setApplicantProfession] = useState("Humanmedizin / Arzt");
   const [applicantGermanLevel, setApplicantGermanLevel] = useState("B1/B2");
+  const [applicantGoal, setApplicantGoal] = useState("Studium im Ausland");
   const [applicantName, setApplicantName] = useState("");
   const [applicantEmail, setApplicantEmail] = useState("");
   const [applicantPhone, setApplicantPhone] = useState("");
@@ -23,6 +24,7 @@ export default function IntakeSection() {
     setApplicantNotes("");
     setApplicantProfession("Humanmedizin / Arzt");
     setApplicantGermanLevel("B1/B2");
+    setApplicantGoal("Studium im Ausland");
     setErrorMessage(null);
     setSubmitted(false);
   };
@@ -41,6 +43,7 @@ export default function IntakeSection() {
         body: JSON.stringify({
           profession: applicantProfession,
           germanLevel: applicantGermanLevel,
+          goal: applicantGoal,
           name: applicantName,
           email: applicantEmail,
           phone: applicantPhone,
@@ -136,7 +139,25 @@ export default function IntakeSection() {
                   </div>
                 )}
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                  <div>
+                    <label htmlFor="applicant-goal" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                      Ziel der Kontaktaufnahme
+                    </label>
+                    <select
+                      id="applicant-goal"
+                      value={applicantGoal}
+                      onChange={(e) => setApplicantGoal(e.target.value)}
+                      disabled={isSubmitting}
+                      className="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-white text-slate-900 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors disabled:bg-slate-100 disabled:cursor-not-allowed"
+                    >
+                      <option value="Studium im Ausland">Studium im Ausland</option>
+                      <option value="Ausbildung">Ausbildung</option>
+                      <option value="Jobsuche">Jobsuche</option>
+                      <option value="Zeugnisanerkennung">Zeugnisanerkennung</option>
+                    </select>
+                  </div>
+
                   <div>
                     <label htmlFor="applicant-profession" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
                       Fachbereich / Berufszweig
