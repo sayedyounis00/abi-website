@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
                 <strong>Verbundenes Unternehmen (Affiliate):</strong> bezeichnet eine Einheit, die eine Partei kontrolliert, von ihr kontrolliert wird oder unter gemeinsamer Kontrolle steht.
               </li>
               <li>
-                <strong>Unternehmen (Company / We / Us / Our):</strong> bezieht sich auf Study Abroad & Career Services, Schlossstraße 5, 19288 Ludwigslust, MV.
+                <strong>Unternehmen (Company / We / Us / Our):</strong> bezieht sich auf Personalvermittlung &amp; Kooperation internationaler Bildungsorganisationen, Schlossstraße 5, 19288 Ludwigslust, MV.
               </li>
               <li>
                 <strong>Cookies:</strong> sind kleine Dateien, die von einer Website auf Ihrem Computer, Mobilgerät oder einem anderen Gerät abgelegt werden.
@@ -141,7 +141,7 @@ export default function PrivacyPolicyPage() {
                 </a>
               </li>
               <li>
-                Adresse: Study Abroad & Career Services, Schlossstraße 5, 19288 Ludwigslust, MV, Deutschland
+                Adresse: Personalvermittlung &amp; Kooperation internationaler Bildungsorganisationen, Schlossstraße 5, 19288 Ludwigslust, MV, Deutschland
               </li>
             </ul>
           </section>

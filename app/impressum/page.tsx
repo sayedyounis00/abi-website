@@ -47,7 +47,7 @@ export default function ImpressumPage() {
               <p className="font-bold text-slate-900 text-sm mb-2">
                 Abi UG (haftungsbeschränkt)
               </p>
-              <p className="text-slate-600 font-medium">Study Abroad &amp; Career Services</p>
+              <p className="text-slate-600 font-medium">Personalvermittlung &amp; Kooperation internationaler Bildungsorganisationen</p>
               <p>Schlossstraße 5</p>
               <p>19288 Ludwigslust, Mecklenburg-Vorpommern</p>
               <p>Deutschland</p>
@@ -61,7 +61,7 @@ export default function ImpressumPage() {
             </h2>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-[11px] leading-relaxed">
               <p>
-                <strong>Geschäftsführung:</strong> Herr Ibrahim Alassal, vertreten durch die Geschäftsführung
+                <strong>Geschäftsführung:</strong> Ibrahim Elassal, vertreten durch die Geschäftsführung
               </p>
             </div>
           </section>
