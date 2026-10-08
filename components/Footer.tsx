@@ -122,7 +122,7 @@ export default function Footer() {
 
         {/* Bottom copyright bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 font-medium gap-4">
-          <p>© 2026 ABI - Arbeit.Bildung.International. Alle Rechte vorbehalten.</p>
+          <p>© 2026 ABI - Arbeit Bildung International. Alle Rechte vorbehalten.</p>
           <p>Fachkräftevermittlung & Studienberatung nach deutschem Recht</p>
         </div>
       </div>

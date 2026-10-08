@@ -1,5 +1,5 @@
 ---
-name: ABI - Arbeit.Bildung.International
+name: ABI - Arbeit Bildung International
 description: Institutional medical & academic recruitment portal connecting international talent with Germany
 colors:
   primary: "#0d9488"
@@ -84,7 +84,7 @@ components:
     padding: "32px"
 ---
 
-# Design System: ABI - Arbeit.Bildung.International
+# Design System: ABI - Arbeit Bildung International
 
 ## Overview
 
@@ -143,7 +143,7 @@ To prevent visual fragmentation and retain an authoritative civic identity, the 
 **Character:** Modern neo-grotesque precision engineered for high legibility on digital screens. The geometric purity and open counters ensure effortless readability across diverse screen sizes and non-native German reading contexts.
 
 ### Hierarchy
-- **Display** (ExtraBold 800, `clamp(2.25rem, 5vw, 3.75rem)`, line-height 1.15, letter-spacing -0.025em): Used for the central Hero statement (`Arbeit. Bildung. International`).
+- **Display** (ExtraBold 800, `clamp(2.25rem, 5vw, 3.75rem)`, line-height 1.15, letter-spacing -0.025em): Used for the central Hero statement (`Arbeit Bildung International`).
 - **Headline** (ExtraBold 800, `clamp(1.875rem, 3.5vw, 3rem)`, line-height 1.2, letter-spacing -0.02em): Section headers (`Unsere Leistungen`, `Über uns`).
 - **Title** (Bold 700, `1.25rem` / `20px` to `1.5rem` / `24px`, line-height 1.35, letter-spacing -0.01em): Service card headers and key feature titles.
 - **Body** (Regular 400, `1rem` / `16px` to `1.125rem` / `18px`, line-height 1.625, letter-spacing normal): Descriptive paragraphs, service details, and institutional copy. Constrained to ≤65ch max line length.

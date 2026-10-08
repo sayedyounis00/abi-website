@@ -13,7 +13,7 @@ web
 
 ## Product Purpose
 
-ABI (Arbeit.Bildung.International / ABI UG) provides a dependable, end-to-end pathway connecting international talent with the German labor and educational markets. Success means enabling qualified candidates to smoothly transition into German professional life and universities with zero bureaucratic friction for either candidates or employers.
+ABI (Arbeit Bildung International / ABI UG) provides a dependable, end-to-end pathway connecting international talent with the German labor and educational markets. Success means enabling qualified candidates to smoothly transition into German professional life and universities with zero bureaucratic friction for either candidates or employers.
 
 ## Positioning
 
@@ -35,7 +35,7 @@ Full-lifecycle partnership: unlike transactional recruiters who stop at candidat
 
 ## Brand Commitments
 
-- **Name:** ABI (Arbeit.Bildung.International / ABI UG).
+- **Name:** ABI (Arbeit Bildung International / ABI UG).
 - **Domain & Contact:** `https://abi-karriere.de/`, `Info@abi-ug.de`.
 - **Brand Voice:** Serious, competent, encouraging, transparent, and institutionally trustworthy.
 - **Brand Identity:** Established ABI logo mark (`/logo-abi-2.svg` and `components/AbiLogo.tsx`).

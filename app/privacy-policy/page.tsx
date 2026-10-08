@@ -5,7 +5,7 @@ import CookieTable from "@/components/cookie-consent/CookieTable";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung (Privacy Policy) - ABI",
-  description: "Datenschutzerklärung von ABI (Arbeit.Bildung.International). Information über die Erhebung, Nutzung und Weitergabe personenbezogener Daten.",
+  description: "Datenschutzerklärung von ABI (Arbeit Bildung International). Information über die Erhebung, Nutzung und Weitergabe personenbezogener Daten.",
 };
 
 export default function PrivacyPolicyPage() {

@@ -18,7 +18,7 @@ export default function AbiLogo({
     <div className="flex items-center gap-3">
       <Image
         src="/logo-abi-2.svg"
-        alt="ABI - Arbeit.Bildung.International Logo"
+        alt="ABI - Arbeit Bildung International Logo"
         width={44}
         height={44}
         priority
@@ -27,7 +27,7 @@ export default function AbiLogo({
       {!iconOnly && (
         <div className="flex flex-col min-w-0">
           <span className={`font-bold text-xs sm:text-sm leading-tight tracking-normal truncate ${textClassName}`}>
-            Arbeit.Bildung.International
+            Arbeit Bildung International
           </span>
           <span className={`text-xs font-semibold ${subtextClassName}`}>
             abi-karriere.de

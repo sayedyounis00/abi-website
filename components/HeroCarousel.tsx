@@ -146,7 +146,7 @@ export default function HeroCarousel() {
 
       {/* Main Slide Card */}
       <div
-        className="relative aspect-[16/10] sm:aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-900 shadow-inner group"
+        className="relative aspect-[16/10] sm:aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-100 shadow-inner group"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
@@ -169,7 +169,8 @@ export default function HeroCarousel() {
                 src={slide.image}
                 alt={slide.alt}
                 fill
-                priority={idx === 0}
+                priority
+                placeholder="blur"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 520px"
                 className="object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
               />

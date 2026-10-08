@@ -112,7 +112,7 @@ export const COOKIE_CONSENT_CONFIG: CookieConsentConfig = {
       cookies: [
         {
           name: "cookie_consent",
-          provider: "ABI - Arbeit.Bildung.International (Erstanbieter)",
+          provider: "ABI - Arbeit Bildung International (Erstanbieter)",
           purpose: {
             de: "Speichert Ihre getroffenen Einstellungen zur Cookie-Einwilligung.",
             en: "Stores your cookie consent preferences and choices.",
@@ -149,7 +149,7 @@ export const COOKIE_CONSENT_CONFIG: CookieConsentConfig = {
       cookies: [
         {
           name: "abi_lang",
-          provider: "ABI - Arbeit.Bildung.International",
+          provider: "ABI - Arbeit Bildung International",
           purpose: {
             de: "Speichert die vom Nutzer bevorzugte Sprachauswahl.",
             en: "Stores the user's preferred language choice.",

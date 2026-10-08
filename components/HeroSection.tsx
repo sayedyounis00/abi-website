@@ -14,7 +14,7 @@ export default function HeroSection() {
           {/* Left Column: Hero Text Content */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.12] mb-6 break-words">
-              Arbeit. Bildung. International
+              Arbeit Bildung International
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-700 leading-relaxed mb-8 max-w-2xl font-normal">

@@ -29,7 +29,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://abi-karriere.de"),
-  title: "ABI - Arbeit.Bildung.International",
+  title: "ABI - Arbeit Bildung International",
   description:
     "Ihr kompetenter Partner für die Vermittlung qualifizierter Fachkräfte aus dem Ausland auf den deutschen Arbeitsmarkt sowie akademische und berufliche Ausbildung in Deutschland.",
   keywords: [
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     "Studienplatzvermittlung",
   ],
   openGraph: {
-    title: "ABI - Arbeit.Bildung.International",
+    title: "ABI - Arbeit Bildung International",
     description: "Vermittlung qualifizierter Fachkräfte aus dem Ausland auf den deutschen Arbeitsmarkt.",
     url: "https://abi-karriere.de",
     siteName: "ABI UG",
@@ -55,13 +55,13 @@ export const metadata: Metadata = {
         url: "/images/og-image.jpg", // Placeholder for actual OG image
         width: 1200,
         height: 630,
-        alt: "ABI - Arbeit.Bildung.International Logo",
+        alt: "ABI - Arbeit Bildung International Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ABI - Arbeit.Bildung.International",
+    title: "ABI - Arbeit Bildung International",
     description: "Ihr Partner für die Vermittlung qualifizierter ausländischer Fachkräfte nach Deutschland.",
     images: ["/images/og-image.jpg"], // Placeholder for actual OG image
   },

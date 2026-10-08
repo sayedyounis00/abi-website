@@ -39,7 +39,7 @@ export default function AboutSection() {
             </h2>
             <div className="space-y-4 text-slate-700 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
               <p>
-                Bei <strong className="text-slate-900 font-semibold">ABI (Arbeit.Bildung.International)</strong> schaffen wir sichere, transparente Übergänge in den deutschen Arbeits- und Ausbildungsmarkt. Unser primärer Schwerpunkt liegt im medizinischen Sektor: Wir begleiten Ärzte, Pflegefachkräfte und Physiotherapeuten durch das anspruchsvolle Anerkennungsverfahren und entlasten deutsche Kliniken von bürokratischem Vorlauf.
+                Bei <strong className="text-slate-900 font-semibold">ABI (Arbeit Bildung International)</strong> schaffen wir sichere, transparente Übergänge in den deutschen Arbeits- und Ausbildungsmarkt. Unser primärer Schwerpunkt liegt im medizinischen Sektor: Wir begleiten Ärzte, Pflegefachkräfte und Physiotherapeuten durch das anspruchsvolle Anerkennungsverfahren und entlasten deutsche Kliniken von bürokratischem Vorlauf.
               </p>
               <p>
                 Gleichzeitig öffnen wir nachhaltige Bildungswege durch die gezielte Vermittlung von Studienplätzen an staatlichen und privaten Hochschulen sowie Ausbildungsplätzen in gefragten Zukunftsbranchen.

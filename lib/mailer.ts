@@ -119,7 +119,7 @@ export async function sendIntakeEmail(data: IntakeSubmissionData) {
       </div>
     </div>
     <div class="footer">
-      <p style="margin: 0 0 4px 0;">ABI – Arbeit.Bildung.International</p>
+      <p style="margin: 0 0 4px 0;">ABI – Arbeit Bildung International</p>
       <p style="margin: 0;">Diese E-Mail wurde automatisch über das Anfrageformular auf <a href="https://abi-karriere.de" style="color: #0f766e;">abi-karriere.de</a> generiert.</p>
     </div>
   </div>
@@ -128,7 +128,7 @@ export async function sendIntakeEmail(data: IntakeSubmissionData) {
   `.trim();
 
   const textContent = `
-Neue Beratungsanfrage - ABI (Arbeit.Bildung.International)
+Neue Beratungsanfrage - ABI (Arbeit Bildung International)
 ------------------------------------------------------------
 Eingangsdatum: ${timestamp}
 
@@ -182,13 +182,13 @@ Generiert über abi-karriere.de
 <body>
   <div class="container">
     <div class="header">
-      <h1 style="margin: 0; font-size: 20px;">ABI – Arbeit.Bildung.International</h1>
+      <h1 style="margin: 0; font-size: 20px;">ABI – Arbeit Bildung International</h1>
     </div>
     <div class="content">
       <p>Sehr geehrte(r) <strong>${escapeHtml(data.name)}</strong>,</p>
       <p>vielen Dank für Ihr Interesse und Ihre Anfrage zur kostenlosen Eignungsprüfung und Erstberatung.</p>
       <p>Wir haben Ihre Daten erfolgreich erhalten. Unser spezialisiertes Beratungsteam prüft Ihre Ausgangslage und wird sich innerhalb von <strong>24 bis 48 Stunden</strong> mit konkreten Schritten bei Ihnen melden.</p>
-      <p style="margin-top: 24px;">Mit freundlichen Grüßen,<br><strong>Ihr ABI-Team</strong><br>Arbeit.Bildung.International</p>
+      <p style="margin-top: 24px;">Mit freundlichen Grüßen,<br><strong>Ihr ABI-Team</strong><br>Arbeit Bildung International</p>
     </div>
     <div class="footer">
       <p style="margin: 0;">ABI – Schlossstraße 5, 19288 Ludwigslust | <a href="mailto:Info@abi-ug.de" style="color: #0f766e;">Info@abi-ug.de</a></p>
@@ -199,10 +199,10 @@ Generiert über abi-karriere.de
   `.trim();
 
   const applicantMailPromise = transporter.sendMail({
-    from: `"ABI - Arbeit.Bildung.International" <${fromEmail}>`,
+    from: `"ABI - Arbeit Bildung International" <${fromEmail}>`,
     to: data.email,
-    subject: "Bestätigung: Ihre Anfrage bei ABI (Arbeit.Bildung.International)",
-    text: `Sehr geehrte(r) ${data.name},\n\nvielen Dank für Ihre Anfrage bei ABI – Arbeit.Bildung.International.\nWir prüfen Ihre Angaben und melden uns innerhalb von 24-48 Stunden bei Ihnen.\n\nMit freundlichen Grüßen,\nIhr ABI-Team\nInfo@abi-ug.de`,
+    subject: "Bestätigung: Ihre Anfrage bei ABI (Arbeit Bildung International)",
+    text: `Sehr geehrte(r) ${data.name},\n\nvielen Dank für Ihre Anfrage bei ABI – Arbeit Bildung International.\nWir prüfen Ihre Angaben und melden uns innerhalb von 24-48 Stunden bei Ihnen.\n\nMit freundlichen Grüßen,\nIhr ABI-Team\nInfo@abi-ug.de`,
     html: applicantConfirmationHtml,
   }).catch((err) => {
     console.error("[Mailer] Warning: Could not send confirmation to applicant:", err);

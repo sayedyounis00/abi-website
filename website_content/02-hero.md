@@ -5,7 +5,7 @@
 ## Content
 
 ### Heading
-## Arbeit.Bildung.International
+## Arbeit Bildung International
 
 ### Subheading
 ### wir sind Ihr kompetenter Partner für die Vermittlung qualifizierter Fachkräfte aus dem Ausland auf den deutschen Arbeitsmarkt.

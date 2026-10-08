@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Impressum - ABI (Arbeit.Bildung.International)",
+  title: "Impressum - ABI (Arbeit Bildung International)",
   description:
-    "Impressum und gesetzliche Anbieterkennzeichnung gemäß § 5 DDG (vormals § 5 TMG) von ABI (Arbeit.Bildung.International).",
+    "Impressum und gesetzliche Anbieterkennzeichnung gemäß § 5 DDG (vormals § 5 TMG) von ABI (Arbeit Bildung International).",
 };
 
 export default function ImpressumPage() {
@@ -218,7 +218,7 @@ export default function ImpressumPage() {
               Bildquellen &amp; Urheberrechte
             </h2>
             <p>
-              Alle auf dieser Website verwendeten Bilder und Grafiken unterliegen dem Urheberrecht. Sofern nicht anders gekennzeichnet, liegen die Rechte bei der ABI (Arbeit.Bildung.International) oder den jeweiligen Lizenzgebern. Eine Nutzung ohne vorherige schriftliche Zustimmung ist nicht gestattet.
+              Alle auf dieser Website verwendeten Bilder und Grafiken unterliegen dem Urheberrecht. Sofern nicht anders gekennzeichnet, liegen die Rechte bei der ABI (Arbeit Bildung International) oder den jeweiligen Lizenzgebern. Eine Nutzung ohne vorherige schriftliche Zustimmung ist nicht gestattet.
             </p>
           </section>
         </div>
